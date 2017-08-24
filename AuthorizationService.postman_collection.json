@@ -70,7 +70,33 @@
 						"addEmptyParamsToSign": false
 					}
 				},
-				"url": "https://usalvwsunmaster.infor.com:29090/authorizationservice/as/v1/api/clients/MingleTechStackService",
+				"url": {
+					"raw": "https://usalvwsunmaster.infor.com:29090/authorizationservice/as/v1/api/clients/{{client_type}}?{{client_type}}={{client_type}}",
+					"protocol": "https",
+					"host": [
+						"usalvwsunmaster",
+						"infor",
+						"com"
+					],
+					"port": "29090",
+					"path": [
+						"authorizationservice",
+						"as",
+						"v1",
+						"api",
+						"clients",
+						"{{client_type}}"
+					],
+					"query": [
+						{
+							"key": "{{client_type}}",
+							"value": "{{client_type}}",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
 				"method": "POST",
 				"header": [
 					{
