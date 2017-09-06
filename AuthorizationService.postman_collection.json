@@ -23,7 +23,7 @@
 				}
 			],
 			"request": {
-				"url": "https://usalvwsunmaster.infor.com:29090/authorizationserver/as/v1/.well-known/openid-configuration/",
+				"url": "{{url}}/as/v1/.well-known/openid-configuration/",
 				"method": "GET",
 				"header": [],
 				"body": {},
@@ -57,30 +57,25 @@
 				"auth": {
 					"type": "oauth1",
 					"oauth1": {
-						"consumerKey": "45X2.QX8cV19aOqm52jy",
-						"consumerSecret": "jyjAIktuVcudFjTd2Q5E",
+						"consumerKey": "{{consumer_key}}",
+						"consumerSecret": "{{consumer_secret}}",
 						"token": "",
 						"tokenSecret": "",
 						"signatureMethod": "HMAC-SHA256",
 						"timestamp": "",
 						"nonce": "",
-						"version": "1.0",
+						"version": "",
 						"realm": "",
 						"addParamsToHeader": true,
 						"addEmptyParamsToSign": false
 					}
 				},
 				"url": {
-					"raw": "https://usalvwsunmaster.infor.com:29090/authorizationserver/as/v1/api/clients/{{client_type}}?{{client_type}}={{client_type}}",
-					"protocol": "https",
+					"raw": "{{url}}/as/v1/api/clients/{{client_type}}?{{client_type}}={{client_type}}",
 					"host": [
-						"usalvwsunmaster",
-						"infor",
-						"com"
+						"{{url}}"
 					],
-					"port": "29090",
 					"path": [
-						"authorizationservice",
 						"as",
 						"v1",
 						"api",
@@ -98,13 +93,7 @@
 					"variable": []
 				},
 				"method": "POST",
-				"header": [
-					{
-						"key": "Authorization",
-						"value": "OAuth oauth_consumer_key=\"45X2.QX8cV19aOqm52jy\",oauth_signature_method=\"HMAC-SHA256\",oauth_timestamp=\"1503386889\",oauth_nonce=\"gRdc3iKdKpA\",oauth_version=\"1.0\",oauth_signature=\"JdXGjfEqCQCbpGc%2B%2B%2BV%2FIgXpe51WX%2FanAgXMtm4m5To%3D\"",
-						"description": ""
-					}
-				],
+				"header": [],
 				"body": {},
 				"description": ""
 			},
@@ -129,7 +118,7 @@
 				}
 			],
 			"request": {
-				"url": "https://usalvwsunmaster.infor.com:29090/authorizationserver/as/v1/token",
+				"url": "{{url}}/as/v1/token",
 				"method": "POST",
 				"header": [
 					{
@@ -183,8 +172,8 @@
 				"auth": {
 					"type": "oauth1",
 					"oauth1": {
-						"consumerKey": "45X2.QX8cV19aOqm52jy-invalid",
-						"consumerSecret": "jyjAIktuVcudFjTd2Q5E",
+						"consumerKey": "invalid-45X2.QX8cV19aOqm52jy",
+						"consumerSecret": "invalid-jyjAIktuVcudFjTd2Q5E",
 						"token": "",
 						"tokenSecret": "",
 						"signatureMethod": "HMAC-SHA256",
@@ -196,15 +185,9 @@
 						"addEmptyParamsToSign": false
 					}
 				},
-				"url": "https://usalvwsunmaster.infor.com:29090/authorizationserver/as/v1/api/clients/MingleTechStackService",
+				"url": "{{url}}/as/v1/api/clients/MingleTechStackService",
 				"method": "POST",
-				"header": [
-					{
-						"key": "Authorization",
-						"value": "OAuth oauth_consumer_key=\"45X2.QX8cV19aOqm52jy-invalid\",oauth_signature_method=\"HMAC-SHA256\",oauth_timestamp=\"1503386191\",oauth_nonce=\"tzm4Rty5I3w\",oauth_version=\"1.0\",oauth_signature=\"FUvASgUzmvO2gA9UlEVYDVwpnin%2FyajYVhshyVEp4nY%3D\"",
-						"description": ""
-					}
-				],
+				"header": [],
 				"body": {},
 				"description": ""
 			},
