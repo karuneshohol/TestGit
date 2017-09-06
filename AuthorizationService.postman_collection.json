@@ -23,7 +23,7 @@
 				}
 			],
 			"request": {
-				"url": "https://usalvwsunmaster.infor.com:29090/authorizationservice/as/v1/.well-known/openid-configuration/",
+				"url": "https://usalvwsunmaster.infor.com:29090/authorizationserver/as/v1/.well-known/openid-configuration/",
 				"method": "GET",
 				"header": [],
 				"body": {},
@@ -71,7 +71,7 @@
 					}
 				},
 				"url": {
-					"raw": "https://usalvwsunmaster.infor.com:29090/authorizationservice/as/v1/api/clients/{{client_type}}?{{client_type}}={{client_type}}",
+					"raw": "https://usalvwsunmaster.infor.com:29090/authorizationserver/as/v1/api/clients/{{client_type}}?{{client_type}}={{client_type}}",
 					"protocol": "https",
 					"host": [
 						"usalvwsunmaster",
@@ -129,7 +129,7 @@
 				}
 			],
 			"request": {
-				"url": "https://usalvwsunmaster.infor.com:29090/authorizationservice/as/v1/token",
+				"url": "https://usalvwsunmaster.infor.com:29090/authorizationserver/as/v1/token",
 				"method": "POST",
 				"header": [
 					{
@@ -196,7 +196,7 @@
 						"addEmptyParamsToSign": false
 					}
 				},
-				"url": "https://usalvwsunmaster.infor.com:29090/authorizationservice/as/v1/api/clients/MingleTechStackService",
+				"url": "https://usalvwsunmaster.infor.com:29090/authorizationserver/as/v1/api/clients/MingleTechStackService",
 				"method": "POST",
 				"header": [
 					{
